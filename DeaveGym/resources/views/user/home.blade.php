@@ -4,3 +4,6 @@
 
 @section('content')
 
+
+<h1>HOme Users</h1>
+
