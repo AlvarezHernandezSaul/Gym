@@ -33,12 +33,6 @@
           <p class="border border-danger rounded-3 bg-danger col-md-8 offset-md-2">Error, fecha requerido</p>
          @enderror 
       
-          <label for="mat" class="form-label">Matricula</label>
-          <input type="name" class="form-control" id="mat" name="mat"  placeholder="ingrese su matricula">
-          @error('mat')
-          <p class="border border-danger rounded-3 bg-danger col-md-8 offset-md-2">Error, matricula requerida</p>
-         @enderror 
-      
           <label for="mat" class="form-label">Seleccione su genero</label> 
           <select type="name" class="form-select" aria-label="Default select example" id="gen" name="gen">
             <option selected>Seleccionar genero</option>
