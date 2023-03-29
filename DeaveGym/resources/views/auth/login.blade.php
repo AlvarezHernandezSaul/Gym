@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<link rel="icon" type="image/x-icon" href="{{ asset('img/brand/Dv.png') }}">
 @section('title', 'Login')
 
 @section('content')
