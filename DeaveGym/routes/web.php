@@ -9,7 +9,7 @@ use App\Http\Controllers\UsuariosController;
 //LOGIN ROUTES
 Route::get('/', function () {
     return view('view1');});
-Route::get('/', function () { return view('user.home' );})->middleware('auth');
+Route::get('/home', function () { return view('user.home' );})->middleware('auth');
  Route::get('/register', [RegisterController::class, 'create'])
  ->name('register.index');
 Route::post('/register', [RegisterController::class, 'store'])
@@ -21,6 +21,4 @@ Route::post('/login', [SessionsController::class, 'store'])
 Route::get('/logout', [SessionsController::class, 'destroy'])
 ->name('login.destroy');
 Route::get('view1', function() { return view('view1'); })->name('view1');
-
-
 

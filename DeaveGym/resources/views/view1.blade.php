@@ -10,7 +10,7 @@
 <img src="{{ asset('img/brand/portada.jpg') }}" width="1300" height="600" class="rounded float-start" alt="..." >
 <div >
   <div></div>
-<video autoplay width="1300" height="600" controls >
+<video autoplay muted width="1300" height="600" id="videoPlayer" loop >
   <source src="{{ asset('img/brand/Bienvenida1.mp4') }}" type="video/mp4">
 </video>
 </div>

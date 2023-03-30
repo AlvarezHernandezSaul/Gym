@@ -1,9 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'view1')
+@section('title', 'Home')
 
 @section('content')
 
-
-<h1>HOme Users</h1>
-
+<div class="container position-absolute" >
+<div class="container" style="margin-top: 3cm;">
+<h1 >Home Users</h1>
+</div>
+</div>

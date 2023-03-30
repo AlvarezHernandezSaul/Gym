@@ -16,12 +16,12 @@ class SessionsController extends Controller
             'message' => 'Correo o contraseña inconrrectos, intente de nuevo'
             ]);
         }
-    return redirect()-> to('/');
+    return redirect()-> to('/home');
     }
     public function destroy(){
 
         auth()->logout();
 
-        return redirect()->to('/');
+        return redirect()->to('/view1');
     }
 }

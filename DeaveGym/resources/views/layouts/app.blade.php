@@ -15,7 +15,7 @@
 </head>
   <body class=" bg-dark text-white"> 
     
-    <nav class="navbar navbar-expand-lg bg-dark text-white"> 
+    <nav class=" navbar navbar-expand-lg bg-dark text-white"> 
       <a href="{{ route('view1') }}" class="btn btn-dark" name="view1">
         <img src="{{ asset('img/brand/DV.png') }}" width="90" height="90" class="rounded float-start" alt="...">
       </a>
@@ -53,4 +53,8 @@
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.13.2/datatables.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    var video = document.getElementById('videoPlayer');
+    video.play();
+</script>
 </html>
