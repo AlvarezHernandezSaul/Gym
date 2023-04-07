@@ -15,8 +15,14 @@ class SessionsController extends Controller
             return back()->withErrors([
             'message' => 'Correo o contraseña inconrrectos, intente de nuevo'
             ]);
+        } else {
+            if (auth()->user()->role == 'admin'){
+                return redirect()-> route ('admin.index');
+            }else {
+            return redirect()->to ('/home');
+            }
         }
-    return redirect()-> to('/home');
+ 
     }
     public function destroy(){
 
