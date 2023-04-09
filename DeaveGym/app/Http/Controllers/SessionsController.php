@@ -19,9 +19,13 @@ class SessionsController extends Controller
             if (auth()->user()->role == 'admin'){
                 return redirect()-> route ('admin.index');
             }else {
-            return redirect()->to ('/home');
+                if (auth()->user()->role == 'coach'){
+                    return redirect()-> route ('coach.index');
+                }else{
+                    return redirect()->to ('/home');
+                }
             }
-        }
+        } 
  
     }
     public function destroy(){
