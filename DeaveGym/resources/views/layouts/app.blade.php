@@ -29,8 +29,6 @@
       <a href="{{ route('view1') }}" class="btn btn-dark" name="view1">
         <img src="{{ asset('img/brand/DV.png') }}" width="90" height="90" class="rounded float-start" alt="...">
       </a>
-      
-    
         <div class="container-fluid d-grid gap-2 d-md-flex justify-content-md-end">
            
             @if(auth()->check())
