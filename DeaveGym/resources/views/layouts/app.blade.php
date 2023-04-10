@@ -67,4 +67,5 @@
     var video = document.getElementById('videoPlayer');
     video.play();
 </script>
+<script src="https://kit.fontawesome.com/7a1296d185.js" crossorigin="anonymous"></script>
 </html>
