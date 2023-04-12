@@ -17,7 +17,7 @@ class SessionsController extends Controller
             ]);
         } else {
             if (auth()->user()->role == 'admin'){
-                return redirect()-> route ('admin.index');
+                return redirect()-> route ('users.index');
             }else {
                 if (auth()->user()->role == 'coach'){
                     return redirect()-> route ('coach.index');
