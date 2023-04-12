@@ -69,6 +69,7 @@
                                     <option value="">Seleccionar Role de usuario</option>
                                     <option value="Admin" @if (old('role') == 'Admin') selected @endif>Admin</option>
                                     <option value="User" @if (old('role') == 'User') selected @endif>User</option>
+                                    <option value="Coach" @if (old('role') == 'Coach') selected @endif>Coach</option>
                                 </select>
                                 @error('role')
                                 <span class="invalid-feedback" role="alert">
@@ -86,3 +87,4 @@
     </div>
 </div>
 
+@endsection

@@ -7,8 +7,8 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CoachController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\RecipeController;
-
+use App\Http\Controllers\ChartController;
+use App\Http\Controllers\VisitaController;
 //LOGIN ROUTES
 Route::get('/', function () {
     return view('view1');});

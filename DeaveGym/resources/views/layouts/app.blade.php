@@ -22,6 +22,7 @@
     <link href="{{ asset('js/bootstrap.min.css') }}" rel="stylesheet" href="">
     
     
+    
 </head>
 
   <body class=" bg-dark text-white"> 

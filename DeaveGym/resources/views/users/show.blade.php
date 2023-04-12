@@ -15,7 +15,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <table class="table">
+            <table class="table" style="background-color: #f2f2f2;">
                 <tbody>
                     <tr>
                         <th>Name</th>
