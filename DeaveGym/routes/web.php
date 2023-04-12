@@ -39,6 +39,16 @@ Route::get('view1', function() { return view('view1'); })->name('view1');
  Route::get('/coach', [CoachController::class, 'index'])
  ->name('coach.index');
 
+
+ //RecipeController
+ // Rutas para el controlador RecipeController
+ Route::get('/recipes', 'RecipeController@index')->name('recipes.index');
+ Route::get('/recipes/create', 'RecipeController@create')->name('recipes.create');
+ Route::post('/recipes', 'RecipeController@store')->name('recipes.store');
+ Route::get('/recipes/{recipe}', 'RecipeController@show')->name('recipes.show');
+ Route::get('/recipes/{recipe}/edit', 'RecipeController@edit')->name('recipes.edit');
+ Route::put('/recipes/{recipe}', 'RecipeController@update')->name('recipes.update');
+ Route::delete('/recipes/{recipe}', 'RecipeController@destroy')->name('recipes.destroy');
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
 Route::post('/users', [UserController::class, 'store'])->name('users.store');
@@ -46,7 +56,10 @@ Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
 Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('users.edit');
 Route::put('/users/{id}', [UserController::class, 'update'])->name('users.update');
 Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
+<<<<<<< HEAD
 Route::get("/chart", function () {
     return view("grafic");
 });
 Route::get('/chart', [VisitaController::class, 'index']);
+=======
+>>>>>>> 83b7597df167cfb24d3e46e600eac297643fc4eb

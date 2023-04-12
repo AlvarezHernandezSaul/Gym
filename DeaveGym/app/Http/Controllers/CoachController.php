@@ -8,6 +8,6 @@ class CoachController extends Controller
 {
     public function index()
     {
-        return view('coach.coach'); // Reemplaza 'mi_pagina' con el nombre de la vista que desees mostrar
+        return view('coach.Recipe.index'); // Reemplaza 'mi_pagina' con el nombre de la vista que desees mostrar
     }
 }
