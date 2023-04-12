@@ -3,11 +3,11 @@
 @section('title', 'Edit User')
 
 @section('content')
-    <div class="container">
-        <div class="row">
+    <div class="container" >
+        <div class="row" >
             <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
+                <div class="card" >
+                    <div class="card-header" style="background-color: #f2f2f2;">
                         <h4 class="card-title">Edit User</h4>
                     </div>
                     <div class="card-body">
@@ -69,6 +69,7 @@
                                 <option value="">Select Role</option>
                                 <option value="admin" @if ($user->role == 'admin') selected @endif>Admin</option>
                                 <option value="user" @if ($user->role == 'user') selected @endif>User</option>
+                                <option value="coach" @if ($user->role == 'coach') selected @endif>Coach</option>
                             </select>
                             @error('role')
                                 <span class="invalid-feedback" role="alert">
@@ -84,5 +85,5 @@
         </div>
     </div>
 </div>
-
+@endsection
 

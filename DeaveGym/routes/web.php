@@ -7,6 +7,8 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CoachController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ChartController;
+use App\Http\Controllers\VisitaController;
 //LOGIN ROUTES
 Route::get('/', function () {
     return view('view1');});
@@ -44,3 +46,7 @@ Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
 Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('users.edit');
 Route::put('/users/{id}', [UserController::class, 'update'])->name('users.update');
 Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
+Route::get("/chart", function () {
+    return view("grafic");
+});
+Route::get('/chart', [VisitaController::class, 'index']);

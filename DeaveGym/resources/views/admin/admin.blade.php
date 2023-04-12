@@ -1,3 +1,4 @@
+@extends('grafic')
 @extends('layouts.app')
 
 @section('title', 'Admin')
@@ -47,4 +48,9 @@
 
     <a href="{{ route('users.create') }}" class="btn btn-success">Agregar Usuario</a>
 </div>
+
+@section('graf')
 @endsection
+
+
+    @endsection
