@@ -9,8 +9,9 @@
 @section('content')
 
 <div class="container position-absolute" >
-<div class="container" style="margin-top: 3cm;">
-<h1 >Home Users</h1>
+<div class="container text-center" style="margin-top: 3cm;">
+    
+<h1 ><i class="far fa-olympus"></i>BIENVENIDO AL OLIMPO</h1>
 </div>
 </div>
 
