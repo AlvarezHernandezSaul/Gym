@@ -3,18 +3,19 @@
 @section('title', 'Create User')
 
 @section('content')
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
+                <div class="card bg-secondary">
+                    <div class="card-header bg-secondary">
                         <h4 class="card-title">Create User</h4>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('users.store') }}">
+                        <form method="POST" action="{{ route('users.store') }}" class="bg-secondary">
                             @csrf
-                            <div class="form-group">
-                                <label for="name">Name</label>
+                            <div class="form-group ">
+                                <label for="name">Nombre</label>
                                 <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') }}" required>
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -41,7 +42,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="fn">Date of Birth</label>
+                                <label for="fn">Fecha Nacimiento</label>
                                 <input type="date" class="form-control @error('fn') is-invalid @enderror" id="fn" name="fn" value="{{ old('fn') }}" required>
                                 @error('fn')
                                     <span class="invalid-feedback" role="alert">
@@ -50,11 +51,11 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="gen">Gender</label>
+                                <label for="gen">Genero</label>
                                 <select class="form-control @error('gen') is-invalid @enderror" id="gen" name="gen" required>
-                                    <option value="">Select Gender</option>
-                                    <option value="Male" @if (old('gen') == 'Male') selected @endif>Male</option>
-                                    <option value="Female" @if (old('gen') == 'Female') selected @endif>Female</option>
+                                    <option value="">Seleccionar Genero</option>
+                                    <option value="Male" @if (old('gen') == 'Male') selected @endif>Masculino</option>
+                                    <option value="Female" @if (old('gen') == 'Female') selected @endif>Femenino</option>
                                 </select>
                                 @error('gen')
                                     <span class="invalid-feedback" role="alert">
@@ -63,9 +64,9 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="role">Role</label>
+                                <label for="role">Role de usuario</label>
                                 <select class="form-control @error('role') is-invalid @enderror" id="role" name="role" required>
-                                    <option value="">Select Role</option>
+                                    <option value="">Seleccionar Role de usuario</option>
                                     <option value="Admin" @if (old('role') == 'Admin') selected @endif>Admin</option>
                                     <option value="User" @if (old('role') == 'User') selected @endif>User</option>
                                 </select>
@@ -75,8 +76,9 @@
                                 </span>
                             @enderror
                         </div>
-                        <button type="submit" class="btn btn-primary">Create</button>
-                        <a href="{{ route('users.index') }}" class="btn btn-secondary">Cancel</a>
+                        <p></p>
+                        <button type="submit" class="btn btn-primary">Crear</button>
+                        <a href="{{ route('users.index') }}" class="btn btn-secondary">Cancelar</a>
                     </form>
                 </div>
             </div>

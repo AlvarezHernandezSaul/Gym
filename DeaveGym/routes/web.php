@@ -7,6 +7,8 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CoachController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RecipeController;
+
 //LOGIN ROUTES
 Route::get('/', function () {
     return view('view1');});
@@ -40,13 +42,14 @@ Route::get('view1', function() { return view('view1'); })->name('view1');
 
  //RecipeController
  // Rutas para el controlador RecipeController
- Route::get('/recipes', 'RecipeController@index')->name('recipes.index');
- Route::get('/recipes/create', 'RecipeController@create')->name('recipes.create');
- Route::post('/recipes', 'RecipeController@store')->name('recipes.store');
- Route::get('/recipes/{recipe}', 'RecipeController@show')->name('recipes.show');
- Route::get('/recipes/{recipe}/edit', 'RecipeController@edit')->name('recipes.edit');
- Route::put('/recipes/{recipe}', 'RecipeController@update')->name('recipes.update');
- Route::delete('/recipes/{recipe}', 'RecipeController@destroy')->name('recipes.destroy');
+ Route::get('/recipes', [RecipeController::class,'index'])->name('recipes.index');
+ Route::get('/recipes/create', [RecipeController::class,'create'])->name('recipes.create');
+ Route::post('/recipes', [RecipeController::class,'store'])->name('recipes.store');
+ Route::get('/recipes/{recipe}', [RecipeController::class,'show'])->name('recipes.show');
+ Route::get('/recipes/{recipe}/edit', [RecipeController::class, 'edit'])->name('recipes.edit');
+ Route::put('/recipes/{recipe}', [RecipeController::class,'update'])->name('recipes.update');
+ Route::delete('/recipes/{recipe}', [RecipeController::class, 'destroy'])->name('recipes.destroy');
+ //Rutas useroCOntroller
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
 Route::post('/users', [UserController::class, 'store'])->name('users.store');
