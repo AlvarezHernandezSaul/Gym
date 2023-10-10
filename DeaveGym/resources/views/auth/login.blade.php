@@ -10,7 +10,7 @@
 <div class="container col-md-5 border border-4 rounded-3" style="background-color: #07ca07;">
   
 <form class="row g-1"  method="POST" action="">
-  <h1 class="display-6 fw-bold text-center">Log in</h1>
+  <h1 class="display-6 fw-bold text-center">Log in at Olimp</h1>
   <a></a>
   <a></a>
   <a></a>
